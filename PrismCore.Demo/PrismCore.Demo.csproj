@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PrismCore.Demo.BLL\PrismCore.Demo.BLL.csproj" />
+    <ProjectReference Include="..\PrismCore.Demo.Common\PrismCore.Demo.Common.csproj" />
+    <ProjectReference Include="..\PrismCore.Demo.DAL\PrismCore.Demo.DAL.csproj" />
+    <ProjectReference Include="..\PrismCore.Demo.IBLL\PrismCore.Demo.IBLL.csproj" />
+    <ProjectReference Include="..\PrismCore.Demo.IDAL\PrismCore.Demo.IDAL.csproj" />
+    <ProjectReference Include="..\PrismCore.Demo.Modules.BaseModule\PrismCore.Demo.Modules.BaseModule.csproj" />
+    <ProjectReference Include="..\PrismCore.Demo.Modules\PrismCore.Demo.Modules.MainModule\PrismCore.Demo.Modules.MainModule.csproj" />
+    <ProjectReference Include="..\PrismCore.Demo.Resources\PrismCore.Demo.Resources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

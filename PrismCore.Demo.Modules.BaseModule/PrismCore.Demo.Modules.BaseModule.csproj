@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>PrismCore.Demo.Modules.BaseModule</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.0.0.1909" />
+    <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrismCore.Demo.Common\PrismCore.Demo.Common.csproj" />
+    <ProjectReference Include="..\PrismCore.Demo.IBLL\PrismCore.Demo.IBLL.csproj" />
+    <ProjectReference Include="..\PrismCore.Demo.Resources\PrismCore.Demo.Resources.csproj" />
+  </ItemGroup>
+</Project>

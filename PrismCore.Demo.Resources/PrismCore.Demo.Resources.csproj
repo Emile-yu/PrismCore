@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\icofont.ttf" />
+    <None Remove="Images\cola.png" />
+    <None Remove="Images\Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\icofont.ttf" />
+    <Resource Include="Images\cola.png" />
+    <Resource Include="Images\Logo.png" />
+  </ItemGroup>
+
+</Project>
