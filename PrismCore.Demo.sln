@@ -35,7 +35,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrismCore.Demo.Modules", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismCore.Demo.Modules.MainModule", "PrismCore.Demo.Modules\PrismCore.Demo.Modules.MainModule\PrismCore.Demo.Modules.MainModule.csproj", "{C26E2F89-203B-4D7E-8F1A-9E90ACEF59D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismCore.Demo.Modules.BaseModule", "PrismCore.Demo.Modules.BaseModule\PrismCore.Demo.Modules.BaseModule.csproj", "{581B0BB1-989D-4C78-9C0E-3C525DF2758A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismCore.Demo.Modules.BaseModule", "PrismCore.Demo.Modules.BaseModule\PrismCore.Demo.Modules.BaseModule.csproj", "{581B0BB1-989D-4C78-9C0E-3C525DF2758A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{23B1F02B-B3AD-4714-8A2E-25C99A69F531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismCore.Server.FunctionalTests", "PrismCore.Server.FunctionalTests\PrismCore.Server.FunctionalTests.csproj", "{024336DA-A61A-4E79-ACE3-73B52AFA5760}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,6 +111,10 @@ Global
 		{581B0BB1-989D-4C78-9C0E-3C525DF2758A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{581B0BB1-989D-4C78-9C0E-3C525DF2758A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{581B0BB1-989D-4C78-9C0E-3C525DF2758A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024336DA-A61A-4E79-ACE3-73B52AFA5760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024336DA-A61A-4E79-ACE3-73B52AFA5760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024336DA-A61A-4E79-ACE3-73B52AFA5760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024336DA-A61A-4E79-ACE3-73B52AFA5760}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +122,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C26E2F89-203B-4D7E-8F1A-9E90ACEF59D5} = {C0215C55-0338-4930-848E-4532B63D1617}
 		{581B0BB1-989D-4C78-9C0E-3C525DF2758A} = {C0215C55-0338-4930-848E-4532B63D1617}
+		{024336DA-A61A-4E79-ACE3-73B52AFA5760} = {23B1F02B-B3AD-4714-8A2E-25C99A69F531}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDD73C11-29B7-4A8D-B174-87CAF25B96A9}
