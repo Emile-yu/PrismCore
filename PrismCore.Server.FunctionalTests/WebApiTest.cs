@@ -24,6 +24,7 @@ namespace PrismCore.Server.FunctionalTests
                 var reponse = await server.GetAsync("/WeatherForecast");
 
                 reponse.EnsureSuccessStatusCode();
+                
             }
         }
     }
