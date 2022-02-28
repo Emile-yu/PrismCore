@@ -14,8 +14,8 @@ namespace PrismCore.Server.IServer
 
         IEnumerable<TEntity> FindAll<TEntity>(Expression<Func<TEntity, bool>> funcWhere) where TEntity : class;
 
-        TEntity Query<TEntity>(TEntity obj) where TEntity : class;
+        TEntity Query<TEntity>(int id) where TEntity : class;
 
-        int Add<TEntity>(TEntity obj) where TEntity : class;
+        TEntity Add<TEntity>(TEntity obj) where TEntity : class;
     }
 }

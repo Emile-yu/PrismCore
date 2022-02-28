@@ -18,24 +18,24 @@ namespace PrismCore.Server.Server
             this._baseDal = baseDal;
         }
 
-        public int Add<TEntity>(TEntity obj) where TEntity : class
+        public TEntity Add<TEntity>(TEntity obj) where TEntity : class
         {
-            return _baseDal.Add<TEntity>(obj);
+            return _baseDal.Insert<TEntity>(obj); //Add<TEntity>(obj);
         }
 
         public TEntity Find<TEntity>(Expression<Func<TEntity, bool>> funcWhere) where TEntity : class
         {
-            return _baseDal.Query<TEntity>(funcWhere);
+            return _baseDal.Query<TEntity>(funcWhere).FirstOrDefault();
         }
 
         public IEnumerable<TEntity> FindAll<TEntity>(Expression<Func<TEntity, bool>> funcWhere) where TEntity : class
         {
-            return _baseDal.QueryAll<TEntity>(funcWhere);
+            return _baseDal.Query<TEntity>(funcWhere);
         }
 
-        public TEntity Query<TEntity>(TEntity obj) where TEntity : class
+        public TEntity Query<TEntity>(int id) where TEntity : class
         {
-            return _baseDal.Query<TEntity>(obj);
+            return _baseDal.Find<TEntity>(id);
         }
     }
 }
