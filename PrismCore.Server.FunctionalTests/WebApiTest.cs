@@ -6,16 +6,16 @@ namespace PrismCore.Server.FunctionalTests
 {
     public class WebApiTest : FunctionTestBase
     {
-        [Fact]
-        public async Task Test1()
-        {
-            using (var server = CreateServer())
-            {
-                var reponse = await server.CreateClient().GetAsync("/WeatherForecastController/Get");
+        //[Fact]
+        //public async Task Test1()
+        //{
+        //    using (var server = CreateServer())
+        //    {
+        //        var reponse = await server.CreateClient().GetAsync("/WeatherForecastController/Get");
 
-                reponse.EnsureSuccessStatusCode();
-            }
-        }
+        //        reponse.EnsureSuccessStatusCode();
+        //    }
+        //}
         [Fact]
         public async Task Test2()
         {
